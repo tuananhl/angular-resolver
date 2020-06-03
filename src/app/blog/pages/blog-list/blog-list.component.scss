@@ -1,0 +1,12 @@
+.list-blog {
+  display: flex;
+  flex-direction: column;
+  &__item {
+    display: block;
+    margin: 10px 0;
+    &-title {
+      font-size: 24px;
+      cursor: pointer;
+    }
+  }
+}

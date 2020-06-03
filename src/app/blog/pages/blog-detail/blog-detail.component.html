@@ -1,0 +1,12 @@
+<p>blog-detail works!</p>
+<div class="blog-detail" *ngIf="blog$ | async as blogDetail; else loading;">
+    <div class="blog-detail-title">{{ blogDetail?.title }}</div>
+    <div class="blog-detail-content">
+      Content:
+      <span>{{ blogDetail?.body }}</span>
+    </div>
+    <div>userId: {{ blogDetail?.userId }}</div>
+</div>
+<ng-template #loading>
+  Loading...
+</ng-template>

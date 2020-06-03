@@ -1,0 +1,8 @@
+<p>blog-list works!</p>
+
+<div class="list-blog" *ngIf="blogs$ | async as listBlogs">
+  <div class="list-blog__item" *ngFor="let blog of listBlogs; let i = index;">
+      <div class="list-blog__item-title" [routerLink]="'/blog/' + blog.id">{{ i+1 }}. {{ blog?.title }}</div>
+      <div class="list-blog__item-content">{{ blog?.body }}</div>
+  </div>
+</div>

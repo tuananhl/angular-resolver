@@ -1,0 +1,10 @@
+<p>blog-detail-resolve works!</p>
+<div class="blog-detail" *ngIf="blog">
+  <div class="blog-detail-title">ID: {{ blog?.id }} & Title: {{ blog?.title }}</div>
+  <div class="blog-detail-content">
+    Content:
+    <span>{{ blog?.body }}</span>
+  </div>
+  <div>userId: {{ blog?.userId }}</div>
+</div>
+<div routerLink="/blog/resolve/2">Go</div>
